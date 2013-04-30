@@ -4,6 +4,20 @@
   <b>Profile:</b>
   <%= @payment.profile %>
 </p>
+<p>
+  <b>Status:</b> <%= @paypal_result['STATUS'] %><br/>
+  <b>Last Payment Date:</b> <%= @paypal_result['LASTPAYMENTDATE'] %><br/>
+  <b>Last Payment Amount:</b> <%= @paypal_result['LASTPAYMENTAMT'] %>
+</p>
+<p>
+  <b># Payments Complete:</b><%= @paypal_result['NUMCYCLESCOMPLETED'] %><br/>
+  <b>Start date:</b> <%= @paypal_result['PROFILESTARTDATE'] %><br/>
+  <b>Next Billing date:</b> <%= @paypal_result['NEXTBILLINGDATE'] %><br/>
+  <b>Total Amount paid:</b> <%= @paypal_result['REGULARAMTPAID'] %> 
+</p>
+<p>
+  <b>PayPal Timestamp:</b> <%= @paypal_result['TIMESTAMP'] %>
+</p>
 
 
 <%= link_to 'Edit', edit_payment_path(@payment) %> |

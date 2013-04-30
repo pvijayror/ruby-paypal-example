@@ -1,0 +1,24 @@
+development:
+  username: p_api1.paypal.com
+  password: your_password
+  signature: your_signature
+  url: sandbox
+  action: https://www.sandbox.paypal.com/cgi-bin/webscr
+test:
+  username: p_api1.paypal.com
+  password: your_password
+  signature: your_signature
+  url: sandbox
+  action: https://www.sandbox.paypal.com/cgi-bin/webscr
+staging:
+  username: p_api1.paypal.com
+  password: your_password
+  signature: your_signature
+  url: sandbox
+  action: https://www.sandbox.paypal.com/cgi-bin/webscr
+production:
+  username: "username"
+  password: "password"
+  signature: "signature"
+  url: production
+  action: https://wwwpaypal.com/cgi-bin/webscr

@@ -1,4 +1,5 @@
 RubyPaypalExample::Application.routes.draw do
+  match 'payments/confirmed' => 'payments#confirmed'
   resources :payments
 
 
